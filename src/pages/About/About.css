@@ -1,0 +1,293 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  background-color: rgb(236, 236, 236);
+}
+
+#header-bg {
+  height: 100%;
+  width: 100%;
+}
+
+header h1 {
+  position: absolute;
+  color: transparent;
+  font-weight: 900;
+  font-size: 4em;
+  margin-left: 5%;
+  margin-top: 5%;
+  -webkit-text-stroke: #ffff;
+  -webkit-text-stroke-width: 1px;
+  transition-duration: 0.5s;
+}
+
+header h1:hover {
+  color: #ffff;
+}
+
+header h3 {
+  position: absolute;
+  color: #ffff;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-left: 5%;
+  margin-top: 9%;
+}
+
+#btn-signin input {
+  position: absolute;
+  left: 91%;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #ffff;
+  width: 75px;
+  height: 35px;
+  color: #ffff;
+  font-weight: 800;
+  margin-top: 15px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+#btn-signup input {
+  position: absolute;
+  left: 85%;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #ffff;
+  width: 100px;
+  height: 35px;
+  color: #ffff;
+  font-weight: 800;
+  margin-top: 15px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+#btn-signup input:hover {
+  transform: scale(108%);
+  background-color: #ffff;
+  color: #000;
+}
+
+#btn-signin input:hover {
+  transform: scale(108%);
+  background-color: #ffff;
+  color: #000;
+}
+
+#inputs-in-up {
+  position: relative;
+  margin-right: 5%;
+}
+
+#resume-course img {
+  position: relative;
+  transform: scale(50%);
+  border-radius: 30px;
+  float: left;
+}
+
+#resume-course {
+  margin-top: 12em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#resume-course p {
+  color: rgba(0, 0, 0, 0.8);
+  width: 300px;
+}
+
+#resume-course img,
+p {
+  display: inline-block;
+  vertical-align: middle;
+}
+#resume-course div {
+  left: -17%;
+  position: relative;
+  float: left;
+}
+
+#resume-course span {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+#highlights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#bg-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  height: 700px;
+  width: 1000px;
+  background-color: #7000ff;
+}
+
+#highlights h2 {
+  font-size: 2.5em;
+  font-weight: 800;
+}
+#highlights h4 {
+  font-weight: 400;
+}
+
+#highlight-1,
+#highlight-2,
+#highlight-3,
+#highlight-4 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 60%;
+  color: #ffff;
+  background-color: rgba(0, 0, 0, 0.342);
+  border-radius: 10px;
+  margin: 15px;
+  border: 2px solid transparent;
+}
+
+#highlight-1:hover {
+  border: 2px solid #ffff;
+}
+#highlight-2:hover {
+  border: 2px solid #ffff;
+}
+#highlight-3:hover {
+  border: 2px solid #ffff;
+}
+#highlight-4:hover {
+  border: 2px solid #ffff;
+}
+
+#about-the-teacher{
+  margin-top: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-the-teacher img{
+  width: 35%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #ffff;
+}
+
+#about-the-teacher div{
+  display: flex;
+  justify-content: center;
+  background-color: #ffff;
+  height: 300px;
+  width: 800px;
+  box-shadow: rgba(110, 110, 110, 0.267) 15px 15px 15px;
+  border-radius: 15px;
+}
+
+#about-the-teacher h2{
+  margin-bottom: 1.5em;
+  font-size: 2.5em;
+  font-weight: 800;
+}
+
+#about-the-teacher h3{
+  font-size: 2em;
+  font-weight: 800;
+}
+
+#about-the-teacher p{
+  font-size: 1.3em;
+}
+
+#text-teacher{
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+}
+
+#history-teacher p{
+  margin-top: 3em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  font-size: 1.2em;
+}
+
+#price-of-course{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#price-of-course h2{
+  font-weight: 800;
+  font-size: 2.5em;
+  margin-top: 8em;
+  margin-bottom: 1.5em;
+}
+
+#price-of-course span{
+  font-size: 1.7em;
+  font-weight: 800;
+}
+#price-of-course h3{
+  font-weight: 800;
+  font-size: 2.8em;
+  color: #7000ff;
+}
+#price-of-course h4{
+  margin-top: -1em;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+#price-of-course input{
+  background-color: #7000ff;
+  border-radius: 5px;
+  border: 2px solid #ffff;
+  width: 145px;
+  height: 55px;
+  color: #ffff;
+  font-weight: 800;
+  margin-top: 15px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+#price-of-course input:hover{
+  transform: scale(120%);
+}
+
+footer{
+  margin-top: 5em;
+  background-color: #7000ff;
+  height: 4em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+footer span{
+  margin: 0.3em;
+  cursor: pointer;
+}
