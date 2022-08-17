@@ -15,9 +15,15 @@ const About = () => {
     <div>
       <header>
         <h1>Barbeiro Destinado</h1>
-        <h3>Nunc congue nisi vitae suscipit tellus mauris</h3>
+        <h3>
+          Seja bem vindo ao curso barbeiro destinado! Aqui você aprenderá a ser
+          um barbeiro profissional, dominar qualquer técnica e saber para onde
+          está indo!
+        </h3>
         <span id="btn-signin">
-          <input type="button" value="ENTRAR" />
+          <Link to="/Signin">
+            <input type="button" value="ENTRAR" />
+          </Link>
         </span>
         <span id="btn-signup">
           <Link to="/Signup">
@@ -31,60 +37,46 @@ const About = () => {
         <section id="resume-course">
           <img src={barber} alt="barber" />
           <div>
-            <span id="tittle-resume">Lorem ipsum dolor sit amet</span>
+            <span id="tittle-resume">
+              Já se perdeu durante um corte? <br /> Cliente pediu um corte e
+              você não sabia nem como começar? <br /> E aquele cliente que
+              cortou uma vez e não voltou mais, por que?
+            </span>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
-              phasellus vestibulum lorem sed risus ultricies tristique. Amet
-              risus nullam eget felis eget. Tincidunt praesent semper feugiat
-              nibh sed pulvinar proin gravida hendrerit. Volutpat diam ut
-              venenatis tellus in metus vulputate eu scelerisque. Elementum nibh
-              tellus molestie nunc. Dignissim sodales ut eu sem. Molestie nunc
-              non blandit massa.
+              Neste curso você terá acesso a várias aulas de cortes explicado
+              por mínimos detalhes, pra aprender de uma vez por todas! Aulas do
+              básico ao avançado Tudo que você precisa pra poder começar!!!
+              Aulas de Degrade, corte social, corte na tesoura, barba modelada,
+              visagismo, colorimetria…
             </p>
           </div>
         </section>
 
         <section id="highlights">
-          <h2>Como é o curso?</h2>
+          <h2>COM BÔNUS DE AULAS PRECIOSAS QUE NÃO TE ENSINAM NOS CURSOS</h2>
           <div id="bg-highlight">
             <div id="highlight-1">
               <h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
-                phasellus vestibulum lorem sed risus ultricies tristique. Amet
-                risus nullam eget felis eget. Tincidunt praesent semper feugiat
-                nibh sed pulvinar proin gravida hendrerit.
+                Bônus 1 - Como ganhar mais de 1.000 reais cortando cabelo sem
+                mesmo ter barbearia
               </h4>
             </div>
 
             <div id="highlight-2">
               <h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
-                phasellus vestibulum lorem sed risus ultricies tristique. Amet
-                risus nullam eget felis eget. Tincidunt praesent semper feugiat
-                nibh sed pulvinar proin gravida hendrerit.
+                Bônus 2 - Como ganhar mais dinheiro e trabalhar menos na sua
+                barbearia
               </h4>
             </div>
 
             <div id="highlight-3">
-              <h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
-                phasellus vestibulum lorem sed risus ultricies tristique. Amet
-                risus nullam eget felis eget. Tincidunt praesent semper feugiat
-                nibh sed pulvinar proin gravida hendrerit.
-              </h4>
+              <h4>Bônus 3 - Como fidelizar clientes</h4>
             </div>
 
             <div id="highlight-4">
               <h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
-                phasellus vestibulum lorem sed risus ultricies tristique. Amet
-                risus nullam eget felis eget. Tincidunt praesent semper feugiat
-                nibh sed pulvinar proin gravida hendrerit.
+                Bônus 4 - Como conseguir clientes novos sem investir nada ou
+                como aumentar valor do seu corte
               </h4>
             </div>
           </div>
@@ -122,14 +114,14 @@ const About = () => {
         </section>
       </main>
       <footer>
-        <span>Sobre a plataforma </span>
+        <p>Sobre a plataforma </p>
         <span>|</span>
-        <span> Políticas de reembolso</span>
+        <p> Políticas de reembolso</p>
         <span>|</span>
-        <span>
-          Alguma dúvida? entre em contato por este e-mail:
-          emailcontato@biecorte.com
-        </span>
+        <span>Alguma dúvida? entre em contato por meu</span>
+        <div id="link-whatsapp">
+          <p>WhatsApp</p>
+        </div>
       </footer>
     </div>
   );

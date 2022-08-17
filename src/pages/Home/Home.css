@@ -1,0 +1,62 @@
+#header-id{
+    background-color: rgb(20, 20, 20);
+    height: 3.5em;
+    box-shadow: #000 15px 0px 20px;
+}
+
+#tittle-header h2{
+    font-size: 2em;
+    color: transparent;
+    padding-left: 0.7em;
+    -webkit-text-stroke: 1px #fff;
+}
+
+#profile-pic img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+}
+#profile-pic{
+    position: absolute;
+    top: 0.6%;
+    left: 97%;
+}
+
+#user-name{
+    color: #fff;
+    position: absolute;
+    top: 1.6%;
+    left: 92%;
+}
+
+#purple-progress-bar{
+    height: 20px;
+    width: 60px;
+    background-color: #7000ff;
+    border-radius: 20px;
+    position: absolute;
+    top: 1.9%;
+    left: 83%;
+}
+
+#progress-bar{
+    height: 20px;
+    width: 130px;
+    background-color: rgb(100, 100, 100);
+    border-radius: 20px;
+    position: absolute;
+    top: 1.9%;
+    left: 83%;
+}
+
+#text-progress{
+    color: #fff;
+    position: absolute;
+    top: 1.6%;
+    left: 74%;
+}
+
+#last-watched span{
+    color: #fff;
+    font-size: 2em;
+}
