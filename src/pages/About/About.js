@@ -13,6 +13,7 @@ import biecorte from "../../assets/biecorte.jpg";
 const About = () => {
   return (
     <div>
+     
       <header>
         <h1>Barbeiro Destinado</h1>
         <h3>
@@ -81,7 +82,6 @@ const About = () => {
             </div>
           </div>
         </section>
-
         <section id="about-the-teacher">
           <h2>Quem é o professor?</h2>
           <div>
