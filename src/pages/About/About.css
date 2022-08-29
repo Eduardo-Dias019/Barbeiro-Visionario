@@ -303,4 +303,29 @@ p {
 }
 #price-of-course input:hover{
   transform: scale(120%);
+<<<<<<< HEAD
+=======
+}
+
+footer{
+  margin-top: 5em;
+  background-color: #7000ff;
+  height: 4em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+footer span{
+  margin: 0.3em;
+}
+
+footer p{
+  cursor: pointer;
+}
+
+#link-whatsapp p{
+  font-weight: 800;
+>>>>>>> 2d0970dd9de444238f80b2076292e4636bdfd5ef
 }

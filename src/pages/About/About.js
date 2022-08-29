@@ -14,6 +14,7 @@ import biecorte from "../../assets/biecorte.jpg";
 const About = () => {
   return (
     <div>
+     
       <header>
         <h1>Barbeiro Destinado</h1>
         <h3>
@@ -82,7 +83,6 @@ const About = () => {
             </div>
           </div>
         </section>
-
         <section id="about-the-teacher">
           <h2>Quem é o professor?</h2>
           <div>
@@ -114,7 +114,20 @@ const About = () => {
           </div>
         </section>
       </main>
+<<<<<<< HEAD
       <Footer/>
+=======
+      <footer>
+        <p>Sobre a plataforma </p>
+        <span>|</span>
+        <p> Políticas de reembolso</p>
+        <span>|</span>
+        <span>Alguma dúvida? entre em contato por meu</span>
+        <div id="link-whatsapp">
+          <p>WhatsApp</p>
+        </div>
+      </footer>
+>>>>>>> 2d0970dd9de444238f80b2076292e4636bdfd5ef
     </div>
   );
 };
