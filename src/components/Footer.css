@@ -1,0 +1,21 @@
+footer{
+    margin-top: 5em;
+    background-color: #7000ff;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+  }
+  footer span{
+    margin: 0.3em;
+  }
+  
+  footer p{
+    cursor: pointer;
+  }
+  
+  #link-whatsapp p{
+    font-weight: 800;
+  }

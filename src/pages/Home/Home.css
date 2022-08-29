@@ -1,0 +1,70 @@
+#last-watched span{
+    margin-top: 2.5em;
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+}
+
+#last-watched iframe{
+    margin-right: 1em;
+    margin-top: 9em;
+    border: 3px #7000ff solid;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+#last-watched{
+    margin-left: 1.5em;
+    display: flex;
+}
+
+
+#last-watched iframe:hover{
+    border-color: #fff;
+    transform: scale(103%);
+}
+
+#next-class span{
+    margin-top: 1em;
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+}
+
+#next-class iframe{
+    margin-top: 6em;
+    border: 3px #7000ff solid;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+#next-class iframe:hover{
+    border-color: #fff;
+    transform: scale(103%);
+}
+
+#next-class{
+    margin-left: 1.5em;
+}
+
+#next-class button{
+    position: absolute;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #ffff;
+    width: 75px;
+    height: 35px;
+    color: #ffff;
+    font-weight: 800;
+    margin-top: 15px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#next-class button:hover{
+    transform: scale(108%);
+    background-color: #ffff;
+    color: #000;
+}
