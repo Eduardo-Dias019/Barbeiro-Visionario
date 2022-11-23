@@ -1,8 +1,8 @@
 import React from "react";
-import Concluido from "../../Components/ClassProgressConclusion/Concluido/Concluido";
-import NaoConcluido from "../../Components/ClassProgressConclusion/NaoConcluido/NaoConcluido"
-import Header from "../../Components/Header/Header";
-import Footer from "../../Components/Footer/Footer"
+import Concluido from "../../components/ClassProgressConclusion/Concluido/Concluido";
+import NaoConcluido from "../../components/ClassProgressConclusion/NaoConcluido/NaoConcluido"
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer"
 import "./Class.css";
 
 const Class = () => {

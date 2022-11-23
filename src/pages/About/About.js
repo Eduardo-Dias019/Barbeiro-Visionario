@@ -1,133 +1,144 @@
 //IMPORTS
 import React from "react";
-import { Link } from "react-router-dom";
-import Footer from "../../Components/Footer/Footer"
+import Footer from "../../components/Footer/Footer";
+import { MdDoneOutline } from "react-icons/md";
 
 //STYLES
 import "./About.css";
 
 //IMAGES
-import headerBG from "../../assets/header-vector.svg";
-import barber from "../../assets/barber.jpg";
-import biecorte from "../../assets/biecorte.jpg";
+import Pole from "../../assets/barber-pole.webp";
+import HeaderBG from "../../assets/header-bg.jpg";
+import Parallax from "../../assets/parallax.jpg";
+import Selo from "../../assets/satisfaction-guarantee.png";
 
 const About = () => {
   return (
-    <div>
-     
-      <header>
-        <h1>Barbeiro Destinado</h1>
-        <h3>
-          Seja bem vindo ao curso barbeiro destinado! Aqui você aprenderá a ser
-          um barbeiro profissional, dominar qualquer técnica e saber para onde
-          está indo!
-        </h3>
-        <span id="btn-signin">
-          <Link to="/Signin">
-            <input type="button" value="ENTRAR" />
-          </Link>
-        </span>
-        <span id="btn-signup">
-          <Link to="/Signup">
-            <input type="button" value="CADASTRAR" />
-          </Link>
-        </span>
-        <img id="header-bg" src={headerBG} alt="headerBG" />
+    <div className="container-about">
+      <header className="header-about">
+        <div className="class-header-about">
+          <img src={HeaderBG} alt="header bg" />
+          <h1>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </h1>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/wYeFAlVC8qU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <h3>Adquira o curso agora mesmo!</h3>
+          <h4>
+            De <span>R$119,99</span> por apenas:
+          </h4>
+          <h2>12 x R$8,80</h2>
+          <button className="btn-header">COMPRAR O CURSO</button>
+        </div>
       </header>
 
-      <main>
-        <section id="resume-course">
-          <img src={barber} alt="barber" />
-          <div>
-            <span id="tittle-resume">
-              Já se perdeu durante um corte? <br /> Cliente pediu um corte e
-              você não sabia nem como começar? <br /> E aquele cliente que
-              cortou uma vez e não voltou mais, por que?
-            </span>
-            <p>
-              Neste curso você terá acesso a várias aulas de cortes explicado
-              por mínimos detalhes, pra aprender de uma vez por todas! Aulas do
-              básico ao avançado Tudo que você precisa pra poder começar!!!
-              Aulas de Degrade, corte social, corte na tesoura, barba modelada,
-              visagismo, colorimetria…
-            </p>
-          </div>
-        </section>
+      <section className="section-about-course">
+        <img className="pole-left" src={Pole} alt="barber pole left" />
+        <img className="pole-right" src={Pole} alt="barber pole right" />
+        <h1>O que você irá aprender neste curso?</h1>
+        <h3>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </h3>
+      </section>
 
-        <section id="highlights">
-          <h2>COM BÔNUS DE AULAS PRECIOSAS QUE NÃO TE ENSINAM NOS CURSOS</h2>
-          <div id="bg-highlight">
-            <div id="highlight-1">
-              <h4>
-                Bônus 1 - Como ganhar mais de 1.000 reais cortando cabelo sem
-                mesmo ter barbearia
-              </h4>
+      <section className="parallax-image">
+        <img src={Parallax} alt="parallax" />
+      </section>
+
+      <section className="section-course-bonus">
+        <h1>E VOCÊ TERÁ ESSES BÔNUS GRÁTIS!</h1>
+        <div className="container-bonus">
+          <div className="bonus">
+            <div className="number-bonus">
+              <h2>Bônus 1</h2>
             </div>
-
-            <div id="highlight-2">
-              <h4>
-                Bônus 2 - Como ganhar mais dinheiro e trabalhar menos na sua
-                barbearia
-              </h4>
-            </div>
-
-            <div id="highlight-3">
-              <h4>Bônus 3 - Como fidelizar clientes</h4>
-            </div>
-
-            <div id="highlight-4">
-              <h4>
-                Bônus 4 - Como conseguir clientes novos sem investir nada ou
-                como aumentar valor do seu corte
-              </h4>
+            <div className="text-bonus">
+              <h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </h3>
             </div>
           </div>
-        </section>
-        <section id="about-the-teacher">
-          <h2>Quem é o professor?</h2>
-          <div>
-            <img src={biecorte} alt="biecorte" />
-            <div id="text-teacher">
-              <h3>Gabriel Ribeiro (@biecorte)</h3>
-              <p>
-                Barbeiro com mais de um ano de experiência, sempre inovando e
-                atraindo cada vez mais clientes
-              </p>
+          <div className="bonus">
+            <div className="number-bonus">
+              <h2>Bônus 2</h2>
+            </div>
+            <div className="text-bonus">
+              <h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </h3>
             </div>
           </div>
-          <span id="history-teacher">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
-              phasellus vestibulum lorem sed risus ultricies tristique.
-            </p>
-          </span>
-        </section>
-
-        <section>
-          <div id="price-of-course">
-            <h2>Qual o valor do curso?</h2>
-            <span>Compre o curso por apenas:</span>
-            <h3>12x de R$8,50</h3>
-            <h4>Ou pague a vista R$97,00</h4>
-            <input type="button" value="COMPRAR" />
+          <div className="bonus">
+            <div className="number-bonus">
+              <h2>Bônus 3</h2>
+            </div>
+            <div className="text-bonus">
+              <h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </h3>
+            </div>
           </div>
-        </section>
-      </main>
-<<<<<<< HEAD
-      <Footer/>
-=======
-      <footer>
-        <p>Sobre a plataforma </p>
-        <span>|</span>
-        <p> Políticas de reembolso</p>
-        <span>|</span>
-        <span>Alguma dúvida? entre em contato por meu</span>
-        <div id="link-whatsapp">
-          <p>WhatsApp</p>
+          <div className="bonus">
+            <div className="number-bonus">
+              <h2>Bônus 4</h2>
+            </div>
+            <div className="text-bonus">
+              <h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </h3>
+            </div>
+          </div>
         </div>
-      </footer>
->>>>>>> 2d0970dd9de444238f80b2076292e4636bdfd5ef
+      </section>
+
+      <section className="section-benefits">
+        <h1>ADQUIRINDO O CURSO VOCÊ TERÁ ESSES BENEFÍCIOS</h1>
+        <h3>
+          Acesso vitalício <MdDoneOutline color="rgb(0, 255, 0)" />
+        </h3>
+        <h3>
+          Garantia de 7 dias para devolvermos seu dinheiro caso não goste do
+          curso <MdDoneOutline color="rgb(0, 255, 0)" />
+        </h3>
+        <h3>
+          Acesso imediato ao curso <MdDoneOutline color="rgb(0, 255, 0)" />
+        </h3>
+        <img src={Selo} alt="Selo garantia" />
+      </section>
+
+      <section className="section-by-course">
+        <h1>Adquira o curso agora mesmo!</h1>
+        <h4>
+          De <span>R$119,99</span> por apenas:
+        </h4>
+        <h2>12 x R$8,80</h2>
+        <h4>Ou pague à vista:</h4>
+        <h2>R$97,00</h2>
+        <button className="btn-by-course">COMPRAR O CURSO</button>
+      </section>
+
+      <Footer />
     </div>
   );
 };

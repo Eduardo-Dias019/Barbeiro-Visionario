@@ -61,11 +61,7 @@ const Signin = () => {
             onChange={(e) => setStatePassword(e.target.value)}
           />
           <div id="signin-account-btn">
-<<<<<<< HEAD
             <Link to="/Home">
-=======
-            <Link to="/home">
->>>>>>> 2d0970dd9de444238f80b2076292e4636bdfd5ef
               <input type="submit" value="ACESSAR A PLATAFORMA" />
             </Link>
           </div>

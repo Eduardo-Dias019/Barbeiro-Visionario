@@ -1,331 +1,311 @@
-* {
-  margin: 0%;
-  padding: 0%;
-}
-
-body{
-  background-color: rgb(236, 236, 236);
-}
-
-#header-bg {
-  height: 100%;
+.class-header-about img{
+  z-index: 1;
+  height: 780px;
   width: 100%;
+  object-fit: cover;
+  filter: brightness(0.3);
 }
 
-header h1 {
+.class-header-about{
+  height: 780px;
+}
+
+.class-header-about h1{
   position: absolute;
-  color: transparent;
-  font-weight: 900;
-  font-size: 4em;
-  margin-left: 5%;
-  margin-top: 5%;
-  -webkit-text-stroke: #ffff;
-  -webkit-text-stroke-width: 1px;
-  animation: text-animation 1.5s infinite alternate;
-}
-
-@keyframes text-animation{
-  0%{
-    color: transparent;
-  }
-
-  100%{
-    color: #ffff;
-  }
-
-  0%{
-    color: transparent;
-  }
-}
-
-header h1:hover {
-  color: #ffff;
-}
-
-header h3 {
-  position: absolute;
-  color: #ffff;
-  font-weight: 300;
-  font-size: 1.5em;
-  margin-left: 5%;
-  margin-top: 9%;
-  width: 600px;
-}
-
-#btn-signin input {
-  position: absolute;
-  left: 91%;
-  background-color: transparent;
-  border-radius: 5px;
-  border: 2px solid #ffff;
-  width: 75px;
-  height: 35px;
-  color: #ffff;
-  font-weight: 800;
-  margin-top: 15px;
-  transition-duration: 0.5s;
-  cursor: pointer;
-}
-
-#btn-signup input {
-  position: absolute;
-  left: 85%;
-  background-color: transparent;
-  border-radius: 5px;
-  border: 2px solid #ffff;
-  width: 100px;
-  height: 35px;
-  color: #ffff;
-  font-weight: 800;
-  margin-top: 15px;
-  transition-duration: 0.5s;
-  cursor: pointer;
-}
-
-#btn-signup input:hover {
-  transform: scale(108%);
-  background-color: #ffff;
-  color: #000;
-}
-
-#btn-signin input:hover {
-  transform: scale(108%);
-  background-color: #ffff;
-  color: #000;
-}
-
-#inputs-in-up {
-  position: relative;
-  margin-right: 5%;
-}
-
-#resume-course img {
-  position: relative;
-  transform: scale(50%);
-  border-radius: 30px;
-  float: left;
-}
-
-#resume-course {
-  margin-top: 12em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffff;
-}
-
-#resume-course p {
-  color: rgba(255, 255, 255, 0.582);
-  width: 300px;
-  font-size: 1.2em;
-}
-
-#resume-course img,
-p {
-  display: inline-block;
-  vertical-align: middle;
-}
-#resume-course div {
-  left: -17%;
-  position: relative;
-  float: left;
-}
-
-#resume-course span {
-  font-size: 1.6em;
-  font-weight: 800;
-}
-
-#highlights {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#bg-highlight {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  height: 550px;
-  width: 800px;
-  background-color: #7000ff;
-}
-
-#highlights h2 {
-  margin-top: 8em;
-  font-size: 2em;
-  font-weight: 800;
-  color: #ffff;
-}
-#highlights h4 {
-  font-weight: 400;
-}
-
-#highlight-1,
-#highlight-2,
-#highlight-3,
-#highlight-4 {
-  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -20%;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
-  width: 60%;
-  color: #ffff;
-  background-color: rgba(0, 0, 0, 0.342);
-  border-radius: 10px;
-  margin: 15px;
-  border: 2px solid transparent;
-}
-
-#highlight-1:hover {
-  border: 2px solid #ffff;
-}
-#highlight-2:hover {
-  border: 2px solid #ffff;
-}
-#highlight-3:hover {
-  border: 2px solid #ffff;
-}
-#highlight-4:hover {
-  border: 2px solid #ffff;
-}
-
-#about-the-teacher{
-  margin-top: 15em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#about-the-teacher img{
+  color: rgb(255, 255, 255);
   width: 35%;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-
+  font-size: 1.5em;
 }
 
-#about-the-teacher div{
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
-  background-image: linear-gradient(135deg, #7000ff, #36007c);
-  height: 300px;
-  width: 800px;
-  box-shadow: rgba(0, 0, 0, 0.671) 15px 15px 15px;
-  border-radius: 15px;
+.div-text-header{
+  padding-top: 20%;
 }
 
-#about-the-teacher h2{
-  margin-bottom: 1.5em;
-  font-size: 2.5em;
-  font-weight: 800;
-  color: #ffff;
+.class-header-about iframe{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  height: 380px;
+  width: 35%;
+  border-radius: 10px;
 }
 
-#about-the-teacher h3{
-  font-size: 2em;
-  font-weight: 800;
-  color: #ffff;
-}
-
-#about-the-teacher p{
-  font-weight: 300;
-  font-size: 1.3em;
-  color: #ffff;
-}
-
-#text-teacher{
-  padding-left: 1em;
-  display: flex;
-  flex-direction: column;
-  vertical-align: middle;
-}
-
-#history-teacher p{
-  margin-top: 3em;
+.class-header-about h3{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 62%;
+  color: rgb(255, 165, 0);
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 600px;
-  font-size: 1.2em;
-  color: #ffff;
+  font-size: 1.5em;
+  width: 75%;
 }
 
-#price-of-course{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.class-header-about h4{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 66%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.1em;
 }
 
-#price-of-course h2{
+.class-header-about span{
+  color: rgb(175, 0, 0);
+  text-decoration: line-through 2px solid;
+}
+
+.class-header-about h2{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 69%;
+  color: rgb(255, 165, 0);
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.btn-header{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 74%;
+  height: 40px;
+  width: 230px;
+  background-color: #7000ff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
   font-weight: 800;
-  font-size: 2.5em;
-  margin-top: 8em;
-  margin-bottom: 1.5em;
-  color: #ffff;
+  transition-duration: 0.5s;
+  font-size: 1em;
 }
 
-#price-of-course span{
+.btn-header:hover{
+  background-color: rgb(255, 165, 0);
+  color: #000;
+}
+
+.section-about-course{
+  position: relative;
+  padding-top: 0;
+  height: 370px;
+  background-image: linear-gradient(45deg, #6f00ff, #913cff);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-about-course h1{
+  margin: 0;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.section-about-course h3{
+  color: rgba(255, 255, 255, 0.774);
+  font-size: 1.2em;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  font-weight: 500;
+  width: 35%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-course-bonus h1{
+  margin-top: 3%;
   font-size: 1.7em;
   font-weight: 800;
-  color: #ffff;
-}
-#price-of-course h3{
-  font-weight: 800;
-  font-size: 2.8em;
-  color: #7000ff;
-}
-#price-of-course h4{
-  margin-top: -1em;
-  font-size: 1.3em;
-  font-weight: 600;
-  color: #ffff;
+  color: #000;
+  text-align: center;
 }
 
-#price-of-course input{
-  background-color: #7000ff;
-  border-radius: 5px;
-  border: 2px solid #ffff;
-  width: 145px;
-  height: 55px;
-  color: #ffff;
-  font-weight: 800;
-  margin-top: 15px;
-  transition-duration: 0.5s;
-  cursor: pointer;
-  font-size: 1.3em;
-}
-#price-of-course input:hover{
-  transform: scale(120%);
-<<<<<<< HEAD
-=======
-}
-
-footer{
-  margin-top: 5em;
-  background-color: #7000ff;
-  height: 4em;
-  width: 100%;
+.section-course-bonus{
+  position: relative;
+  margin-top: 0;
+  background-color: #fff;
+  height: 500px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.bonus{
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.575) 7px 7px 15px;
+  border-radius: 20px;
   align-items: center;
-  color: #ffff;
-}
-footer span{
-  margin: 0.3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  background-color: #7000ff;
+  margin: 1%;
+  transition-duration: 0.5s;
 }
 
-footer p{
-  cursor: pointer;
+.bonus:hover{
+  transform: scale(105%);
+  rotate: -10deg;
 }
 
-#link-whatsapp p{
+.number-bonus{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 40px;
+  width: 150px;
+  background-color: rgb(255, 165, 0);
+}
+
+.text-bonus{
+  margin-top: 5%;
+}
+
+.container-bonus{
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.parallax-image img{
+  filter: opacity(0.3);
+  height: 850px;
+  width: 100vw;
+  z-index: -1;
+  position: fixed;
+  top: 0%;
+  overscroll-behavior-block: initial;
+}
+
+.section-benefits{
+  margin-top: 10%;
+  background-color: rgb(22, 22, 22);
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-benefits img{
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin-top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-benefits h1{
+  margin: 0;
+  padding-top: 2%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: rgb(255, 165, 0);
+  width: 85%;
+  font-size: 1.3em;
+  padding-bottom: 10px;
+}
+
+.section-benefits h3{
+  text-align: center;
+  color: #fff;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-by-course{
+  margin-top: -15%;
+  height: 265px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.section-by-course h3{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 165, 0);
+  text-align: center;
+  font-size: 1.3em;
+  width: 75%;
+}
+
+.section-by-course h1{
+  padding-top: 20px;
+  color: #000;
+  font-size: 1.3em;
+}
+
+.section-by-course h4{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 1.1em;
+}
+
+.section-by-course span{
+  color: rgb(175, 0, 0);
+  text-decoration: line-through 2px solid;
+}
+
+.section-by-course h2{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 165, 0);
+  text-align: center;
+  font-size: 1.3em;
+  background-color: #000;
+  width: 130px;
+  border-radius: 5px;
+}
+
+.btn-by-course{
+  margin-top: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+  width: 230px;
+  background-color: #7000ff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
   font-weight: 800;
->>>>>>> 2d0970dd9de444238f80b2076292e4636bdfd5ef
+  transition-duration: 0.5s;
+  font-size: 1em;
+}
+
+.btn-by-course:hover{
+  background-color: rgb(255, 165, 0);
+  color: #000;
+}
+
+.pole-left{
+  position: absolute;
+  left: 3%;
+  transform: scale(15%);
+}
+
+.pole-right{
+  position: absolute;
+  right: 3%;
+  transform: scale(15%);
 }

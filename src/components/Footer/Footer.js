@@ -9,7 +9,7 @@ const Footer = () => {
         <span>|</span>
         <p> Políticas de reembolso</p>
         <span>|</span>
-        <span>Alguma dúvida? entre em contato por meu</span>
+        <p>Alguma dúvida? entre em contato por meu</p>
         <div id="link-whatsapp">
           <p>WhatsApp</p>
         </div>
