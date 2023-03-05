@@ -2,6 +2,7 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
 import { MdDoneOutline } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 //STYLES
 import "./About.css";
@@ -11,26 +12,31 @@ import Pole from "../../assets/barber-pole.webp";
 import HeaderBG from "../../assets/header-bg.jpg";
 import Parallax from "../../assets/parallax.jpg";
 import Selo from "../../assets/satisfaction-guarantee.png";
+import Barber from "../../assets/barber.svg";
 
 const About = () => {
   return (
     <div className="container-about">
       <header className="header-about">
+        <div className="header-top">
+          <h1>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </h1>
+          <Link to="/Signin">
+            <button>Entrar</button>
+          </Link>
+          <img src={Barber} alt="barber" />
+        </div>
         <div className="class-header-about">
           <img src={HeaderBG} alt="header bg" />
           <h1>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
           </h1>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/wYeFAlVC8qU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div id="video-about-container">
+            <div className="video-about">AQUI VAI O VÍDEO</div>
+          </div>
           <h3>Adquira o curso agora mesmo!</h3>
           <h4>
             De <span>R$119,99</span> por apenas:

@@ -10,63 +10,29 @@ const Home = () => {
   return (
     <div>
       <Header />
+      <div id="video-container-home">
         <section id="next-class">
           <span>Próxima aula</span>
-          <div>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/3hng-hmSv2Y?controls=0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div id="class-watched-container">
+            <div className="video">AQUI VAI A AULA</div>
           </div>
           <Link to="/Class">
             <button>ASSISTIR</button>
           </Link>
         </section>
-      <main>
-        <section id="last-watched">
-          <span>Últimas aulas assistidas</span>
-          <div>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/3hng-hmSv2Y?controls=0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/3hng-hmSv2Y?controls=0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/3hng-hmSv2Y?controls=0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
+        <main>
+          <section id="last-watched">
+            <span>Últimas aulas assistidas</span>
+            <div id="class-watched-container">
+              <div className="video">AQUI VAI A AULA</div>
+              <div className="video">AQUI VAI A AULA</div>
+              <div className="video">AQUI VAI A AULA</div>
+            </div>
+          </section>
         </main>
-      <Footer />
       </div>
+      <Footer />
+    </div>
   );
 };
 

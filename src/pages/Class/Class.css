@@ -1,114 +1,149 @@
-#watch-class iframe{
-    margin-top: 6%;
-    margin-left: 20%;
+.video-class {
+  height: 15em;
+  width: 25em;
+  background-color: #fff;
+  border-radius: 15px;
+  font-weight: 800;
+  text-align: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
 }
 
-#watch-class span{
-    font-size: 1.5em;
-    margin-top: 1%;
-    margin-left: 10%;
-    color: #fff;
-    position: absolute;
+#watch-class span {
+  font-size: 1.5em;
+  margin-top: 3%;
+  color: #fff;
+  position: relative;
 }
 
-#feedback span{
-    color: #fff;
+#feedback span {
+  color: #fff;
 }
-#feedback{
-    display: flex;
+#feedback {
+  display: flex;
+  flex-direction: column;
+}
+
+#feedback textarea {
+  height: 150px;
+  width: 400px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(63, 63, 63);
+  color: #fff;
+  resize: none;
+}
+
+#feedback textarea:focus {
+  outline: none;
+}
+
+#feedback textarea::placeholder {
+  position: absolute;
+  padding: 5px;
+}
+
+#feedback input {
+  position: relative;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #ffff;
+  width: 75px;
+  height: 35px;
+  color: #ffff;
+  font-weight: 800;
+  margin-top: 15px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+#feedback input:hover {
+  transform: scale(108%);
+  background-color: #ffff;
+  color: #000;
+}
+
+#main-id {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+#menu-class {
+  overflow-y: scroll;
+  margin-top: 8%;
+  margin-left: 25%;
+  margin-bottom: 10%;
+  height: 770px;
+  width: 450px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+#menu-class h2 {
+  color: #7000ff;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 15px;
+  border-bottom: #000 2px solid;
+  width: 100%;
+}
+
+#class {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  margin-top: 5%;
+}
+
+#class span {
+  margin-top: -1%;
+  vertical-align: middle;
+}
+
+#class div {
+  margin-right: 5px;
+}
+
+#modulo-name-1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+  border-bottom: #000 2px solid;
+  width: 100%;
+}
+
+#modulo-name-1:hover {
+  text-decoration: underline 2px;
+}
+
+@media (max-width: 941px) {
+  #main-id {
     flex-direction: column;
-    margin-left: 20%;
-}
-
-#feedback textarea{
-    height: 150px;
-    width: 400px;
-    border-radius: 10px;
-    border: none;
-    background-color: rgb(63, 63, 63);
-    color: #fff;
-    resize: none;
-}
-
-#feedback textarea:focus{
-    outline: none;
-}
-
-#feedback textarea::placeholder{
-    position: absolute;
-    padding: 5px;
-}
-
-#feedback input{
-    position: relative;
-    background-color: transparent;
-    border-radius: 5px;
-    border: 2px solid #ffff;
-    width: 75px;
-    height: 35px;
-    color: #ffff;
-    font-weight: 800;
-    margin-top: 15px;
-    transition-duration: 0.5s;
-    cursor: pointer;
-}
-
-#feedback input:hover{
-    transform: scale(108%);
-    background-color: #ffff;
-    color: #000;
-}
-
-#main-id{
-    display: flex;
-    flex-direction: row;
-}
-
-#menu-class{
-    overflow-y: scroll;
-    margin-top: 13%;
-    margin-left: 75%;
-    height: 770px;
-    width: 450px;
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-#menu-class h2{
-    color: #7000ff;
-    font-weight: 800;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 15px;
-    border-bottom: #000 2px solid;
-    width: 410px;
-}
-
-#class{
-    display: flex;
-    flex-direction: row;
-    margin-left: 30px;
+  }
+  #menu-class {
+    margin-left: 0;
     margin-top: 5%;
+    width: 100%;
+  }
 }
 
-#class span{
-    margin-top: -1%;
-    vertical-align: middle;
-}
-
-#class div{
-    margin-right: 5px;
-}
-
-#modulo-name-1{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 15px;
-    cursor: pointer;
-    border-bottom: #000 2px solid;
-    width: 410px;
-}
-
-#modulo-name-1:hover{
-    text-decoration: underline 2px;
+@media (max-width: 625px) {
+  .video-class {
+    height: 7em;
+    width: 100%;
+  }
+  #feedback textarea {
+    width: 100%;
+  }
+  #feedback span {
+    margin-top: 3%;
+  }
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import Concluido from "../../components/ClassProgressConclusion/Concluido/Concluido";
-import NaoConcluido from "../../components/ClassProgressConclusion/NaoConcluido/NaoConcluido"
+import NaoConcluido from "../../components/ClassProgressConclusion/NaoConcluido/NaoConcluido";
 import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer"
+import Footer from "../../components/Footer/Footer";
 import "./Class.css";
 
 const Class = () => {
@@ -14,15 +14,7 @@ const Class = () => {
           <section id="watch-class">
             <div>
               <span>Example Video</span>
-              <iframe
-                width="960"
-                height="580"
-                src="https://www.youtube.com/embed/GicFdDHo-zE"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <div className="video-class">AQUI VAI A AULA</div>
             </div>
           </section>
           <section id="feedback">
@@ -40,61 +32,61 @@ const Class = () => {
               </div>
               <div id="class">
                 <div>
-                    <Concluido />
+                  <Concluido />
                 </div>
                 <span>Aula 1</span>
               </div>
               <div id="class">
                 <div>
-                    <NaoConcluido />
+                  <NaoConcluido />
                 </div>
                 <span>Aula 2</span>
               </div>
               <div id="class">
                 <div>
-                    <NaoConcluido />
+                  <NaoConcluido />
                 </div>
                 <span>Aula 3</span>
               </div>
               <div id="class">
                 <div>
-                    <NaoConcluido />
+                  <NaoConcluido />
                 </div>
                 <span>Aula 4</span>
               </div>
               <div id="class">
                 <div>
-                    <NaoConcluido />
+                  <NaoConcluido />
                 </div>
                 <span>Aula 5</span>
               </div>
               <div id="class">
                 <div>
-                    <NaoConcluido />
+                  <NaoConcluido />
                 </div>
                 <span>Aula 6</span>
               </div>
               <div id="class">
                 <div>
-                    <NaoConcluido />
+                  <NaoConcluido />
                 </div>
                 <span>Aula 7</span>
               </div>
               <div id="class">
                 <div>
-                    <NaoConcluido />
+                  <NaoConcluido />
                 </div>
                 <span>Aula 8</span>
               </div>
               <div id="class">
                 <div>
-                    <NaoConcluido />
+                  <NaoConcluido />
                 </div>
                 <span>Aula 9</span>
               </div>
               <div id="class">
                 <div>
-                    <NaoConcluido />
+                  <NaoConcluido />
                 </div>
                 <span>Aula 10</span>
               </div>

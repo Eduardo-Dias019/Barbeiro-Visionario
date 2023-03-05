@@ -1,4 +1,4 @@
-.class-header-about img{
+.class-header-about img {
   z-index: 1;
   height: 780px;
   width: 100%;
@@ -6,76 +6,83 @@
   filter: brightness(0.3);
 }
 
-.class-header-about{
+.class-header-about {
   height: 780px;
+  position: relative;
 }
 
-.class-header-about h1{
-  position: absolute;
+.class-header-about h1 {
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: -20%;
+  top: -95%;
   text-align: center;
   color: rgb(255, 255, 255);
-  width: 35%;
+  width: 40%;
   font-size: 1.5em;
 }
 
-.div-text-header{
+.video-about {
+  height: 20em;
+  width: 32em;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 22%;
+  z-index: 1;
+  font-size: 1.2em;
+}
+
+.div-text-header {
   padding-top: 20%;
 }
 
-.class-header-about iframe{
+.class-header-about h3 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 20%;
-  height: 380px;
-  width: 35%;
-  border-radius: 10px;
-}
-
-.class-header-about h3{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 62%;
+  top: 75%;
   color: rgb(255, 165, 0);
   text-align: center;
   font-size: 1.5em;
   width: 75%;
 }
 
-.class-header-about h4{
+.class-header-about h4 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 66%;
+  top: 80%;
   text-align: center;
   color: #fff;
   font-size: 1.1em;
 }
 
-.class-header-about span{
+.class-header-about span {
   color: rgb(175, 0, 0);
   text-decoration: line-through 2px solid;
 }
 
-.class-header-about h2{
+.class-header-about h2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 69%;
+  top: 85%;
   color: rgb(255, 165, 0);
   text-align: center;
   font-size: 1.3em;
 }
 
-.btn-header{
+.btn-header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 74%;
+  top: 90%;
   height: 40px;
   width: 230px;
   background-color: #7000ff;
@@ -87,12 +94,50 @@
   font-size: 1em;
 }
 
-.btn-header:hover{
+.btn-header:hover {
   background-color: rgb(255, 165, 0);
   color: #000;
 }
 
-.section-about-course{
+.header-top {
+  background: linear-gradient(90deg, #7000ff, rgb(255, 165, 0));
+  height: 42em;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.header-top button {
+  height: 45px;
+  width: 110px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  background: rgb(255, 165, 0);
+  transition-duration: 0.5s;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.header-top button:hover {
+  background: #7000ff;
+  box-shadow: #fff 0px 0px 35px, inset #fff 0px 0px 10px;
+  color: #fff;
+}
+
+.header-top h1 {
+  color: #fff;
+  width: 35%;
+  margin-left: 5%;
+}
+
+.header-top img {
+  height: 25em;
+  margin-left: 7%;
+}
+
+.section-about-course {
   position: relative;
   padding-top: 0;
   height: 370px;
@@ -102,13 +147,15 @@
   flex-direction: column;
 }
 
-.section-about-course h1{
+.section-about-course h1 {
   margin: 0;
   font-size: 1.6em;
   margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
 }
 
-.section-about-course h3{
+.section-about-course h3 {
   color: rgba(255, 255, 255, 0.774);
   font-size: 1.2em;
   padding-left: 15px;
@@ -121,7 +168,7 @@
   transform: translateX(-50%);
 }
 
-.section-course-bonus h1{
+.section-course-bonus h1 {
   margin-top: 3%;
   font-size: 1.7em;
   font-weight: 800;
@@ -129,7 +176,7 @@
   text-align: center;
 }
 
-.section-course-bonus{
+.section-course-bonus {
   position: relative;
   margin-top: 0;
   background-color: #fff;
@@ -138,7 +185,7 @@
   flex-direction: column;
 }
 
-.bonus{
+.bonus {
   color: #fff;
   box-shadow: rgba(0, 0, 0, 0.575) 7px 7px 15px;
   border-radius: 20px;
@@ -153,12 +200,12 @@
   transition-duration: 0.5s;
 }
 
-.bonus:hover{
+.bonus:hover {
   transform: scale(105%);
   rotate: -10deg;
 }
 
-.number-bonus{
+.number-bonus {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   height: 40px;
@@ -166,18 +213,19 @@
   background-color: rgb(255, 165, 0);
 }
 
-.text-bonus{
+.text-bonus {
   margin-top: 5%;
+  padding: 8px;
 }
 
-.container-bonus{
+.container-bonus {
   position: relative;
   justify-content: center;
   display: flex;
   flex-direction: row;
 }
 
-.parallax-image img{
+.parallax-image img {
   filter: opacity(0.3);
   height: 850px;
   width: 100vw;
@@ -187,16 +235,16 @@
   overscroll-behavior-block: initial;
 }
 
-.section-benefits{
-  margin-top: 10%;
+.section-benefits {
+  margin-top: 25%;
   background-color: rgb(22, 22, 22);
   width: 100%;
-  height: 450px;
+  height: 400px;
   display: flex;
   flex-direction: column;
 }
 
-.section-benefits img{
+.section-benefits img {
   height: 250px;
   width: 250px;
   position: relative;
@@ -205,7 +253,7 @@
   transform: translateX(-50%);
 }
 
-.section-benefits h1{
+.section-benefits h1 {
   margin: 0;
   padding-top: 2%;
   position: relative;
@@ -218,7 +266,7 @@
   padding-bottom: 10px;
 }
 
-.section-benefits h3{
+.section-benefits h3 {
   text-align: center;
   color: #fff;
   position: relative;
@@ -228,14 +276,13 @@
   padding-right: 15px;
 }
 
-.section-by-course{
-  margin-top: -15%;
+.section-by-course {
   height: 265px;
   width: 100%;
   background-color: #fff;
 }
 
-.section-by-course h3{
+.section-by-course h3 {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -245,13 +292,14 @@
   width: 75%;
 }
 
-.section-by-course h1{
+.section-by-course h1 {
   padding-top: 20px;
   color: #000;
   font-size: 1.3em;
+  text-align: center;
 }
 
-.section-by-course h4{
+.section-by-course h4 {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -260,12 +308,12 @@
   font-size: 1.1em;
 }
 
-.section-by-course span{
+.section-by-course span {
   color: rgb(175, 0, 0);
   text-decoration: line-through 2px solid;
 }
 
-.section-by-course h2{
+.section-by-course h2 {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -277,7 +325,7 @@
   border-radius: 5px;
 }
 
-.btn-by-course{
+.btn-by-course {
   margin-top: 10px;
   position: relative;
   left: 50%;
@@ -293,19 +341,138 @@
   font-size: 1em;
 }
 
-.btn-by-course:hover{
+.btn-by-course:hover {
   background-color: rgb(255, 165, 0);
   color: #000;
 }
 
-.pole-left{
+.pole-left {
   position: absolute;
   left: 3%;
   transform: scale(15%);
 }
 
-.pole-right{
+.pole-right {
   position: absolute;
   right: 3%;
   transform: scale(15%);
+}
+
+@media (max-width: 968px) {
+  .header-top img {
+    height: 15em;
+  }
+  .header-top button {
+    top: 75%;
+    left: 5%;
+  }
+  .class-header-about h1 {
+    width: 55%;
+  }
+  .class-header-about h3 {
+    top: 70%;
+  }
+
+  .class-header-about h4 {
+    top: 75%;
+  }
+
+  .class-header-about h2 {
+    top: 80%;
+  }
+
+  .btn-header {
+    top: 85%;
+  }
+
+  .video-about {
+    top: 20%;
+  }
+  .section-about-course h3 {
+    width: 75%;
+  }
+  .pole-left {
+    margin-left: -20%;
+  }
+  .pole-right {
+    margin-right: -20%;
+  }
+}
+
+@media (max-width: 685px) {
+  .header-top img {
+    display: none;
+  }
+  .header-top h1 {
+    width: 70%;
+  }
+  .header-top button {
+    top: 67%;
+    left: 5%;
+  }
+  .class-header-about h1 {
+    font-size: 1.5em;
+    width: 80%;
+  }
+  .pole-left {
+    display: none;
+  }
+  .pole-right {
+    display: none;
+  }
+  .container-bonus {
+    flex-wrap: wrap;
+  }
+  .section-course-bonus {
+    height: 725px;
+  }
+}
+
+@media (max-width: 485px) {
+  .header-top button {
+    top: 75%;
+    left: 5%;
+    height: 50px;
+    width: 118px;
+  }
+  .video-about {
+    height: 13em;
+    width: 22em;
+    top: 30%;
+  }
+  .class-header-about h3 {
+    top: 72%;
+    width: 100%;
+  }
+
+  .class-header-about h4 {
+    top: 76%;
+    width: 100%;
+  }
+
+  .class-header-about h2 {
+    top: 80%;
+  }
+  .btn-header {
+    top: 85%;
+  }
+  .section-about-course {
+    height: 550px;
+  }
+  .section-course-bonus h1 {
+    font-size: 1.5em;
+  }
+  .section-course-bonus {
+    height: 1250px;
+  }
+  .bonus {
+    height: 280px;
+    width: 280px;
+  }
+  .text-bonus {
+    font-size: 1em;
+  }
+  .section-benefits {
+    height: 450px;
+  }
 }
